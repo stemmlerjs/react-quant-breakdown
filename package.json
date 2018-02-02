@@ -1,0 +1,31 @@
+{
+  "name": "quant-breakdown",
+  "version": "0.0.1",
+  "description": "A React component to visualize the quantitative breakdown of a process.",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "moment": "^2.20.1",
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Khalil Stemmler",
+    "email": "khalilstemmler@gmail.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
+  }
+}
