@@ -7,8 +7,41 @@ A react component to visualize the quantitative breakdown of a process and it's 
 ## Getting Started
 
 ```
-npm install quant-breakdown
+npm install quantity-breakdown
 ```
+
+## Usage
+
+```jsx
+import QuantityBreakdown from 'quantity-breakdown';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <QuantityBreakdown 
+          text="Daily Spend Report" 
+          type="cost"
+          chunks={[
+            { name: 'Coffee', value: 4.23 },
+            { name: 'Lunch', value: 9.32 },
+            { name: 'Gas', value: 50.00 },
+            { name: 'Drinks', value: 23.90 },
+          ]} 
+          />
+      </div>
+    );
+  }
+}
+
+```
+
+| Prop name | Description                                  | Type                                        | Example                                                         |
+|-----------|----------------------------------------------|---------------------------------------------|-----------------------------------------------------------------|
+| title     | The title of the process breakdown component | String                                      | Weekly Spending Report                                          |
+| type      | Type of data to be aggregated                | String: ("cost", "time")                    | time                                                            |
+| chunks    | The chunks of data to be aggregated          | Array of objects containing name and value | [{ name: 'Gas', value: 50.00 }, {name: 'Drinks', value: 32.23}] |
+
 
 ## License
 
