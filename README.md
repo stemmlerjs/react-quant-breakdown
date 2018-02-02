@@ -42,6 +42,23 @@ class App extends Component {
 | type      | Type of data to be aggregated                | String: ("cost", "time")                    | time                                                            |
 | chunks    | The chunks of data to be aggregated          | Array of objects containing name and value | [{ name: 'Gas', value: 50.00 }, {name: 'Drinks', value: 32.23}] |
 
+## Setting up a dev environment
+
+To run the tests, we can create a link to this project to be used in dev:
+
+```
+npm i
+npm run build
+npm link
+```
+
+Then, in the ```tests``` folder, run:
+
+```
+npm install
+npm link quantity-breakdown
+npm run start
+```
 
 ## License
 
