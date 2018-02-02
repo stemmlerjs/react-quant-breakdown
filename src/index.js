@@ -9,7 +9,7 @@ class QuantityBreakdown extends React.Component {
     let text = this.props.text; 
     let type = this.props.type;
     let chunks = this.props.chunks;
-    let total = this.props.total;
+    let total = this.props.chunks.reduce((prev, curr) => ({value: prev.value + curr.value })).value
     let supplemental = this.props.supplemental;
 
     return (

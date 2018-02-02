@@ -16439,7 +16439,9 @@ var QuantityBreakdown = function (_React$Component) {
       var text = this.props.text;
       var type = this.props.type;
       var chunks = this.props.chunks;
-      var total = this.props.total;
+      var total = this.props.chunks.reduce(function (prev, curr) {
+        return { value: prev.value + curr.value };
+      }).value;
       var supplemental = this.props.supplemental;
 
       return _react2.default.createElement(
